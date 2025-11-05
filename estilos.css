@@ -15,23 +15,15 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Animación de entrada del título */
 header h1 {
     animation: aparecer 2s ease-in-out;
 }
 
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
-/* ======== NAVEGACIÓN ======== */
 nav a {
     color: white;
     text-decoration: none;
@@ -45,7 +37,6 @@ nav a:hover {
     transform: scale(1.1); 
 }
 
-/* ======== CONTENIDO ======== */
 main {
     padding: 20px;
 }
@@ -72,7 +63,6 @@ footer {
 }
 
 /* ======== ACTIVIDAD 1 ======== */
-/* Botón que cambia de color y tamaño al hacer clic */
 #boton-ejemplo {
     background-color: #4caf50;
     color: white;
@@ -90,7 +80,6 @@ footer {
 }
 
 /* ======== ACTIVIDAD 2 ======== */
-/* Cuadro que se mueve y cambia de color */
 #cuadro {
     width: 100px;
     height: 100px;
@@ -108,18 +97,16 @@ footer {
 }
 
 /* ======== ACTIVIDAD 4 ======== */
-/* Cuadro aumenta de tamaño al pasar el mouse */
 #cuadro:hover {
     transform: scale(1.3);
     transition: transform 0.5s;
 }
 
 /* ======== ACTIVIDAD 3 Y 5 ======== */
-/* Texto animado (movimiento y giro continuo) */
 #texto-animado {
     display: inline-block;
     font-size: 20px;
-    animation: moverTexto 3s infinite ease-in-out; /* velocidad ajustada */
+    animation: moverTexto 3s infinite ease-in-out;
 }
 
 @keyframes moverTexto {
@@ -129,5 +116,7 @@ footer {
     75%  { transform: translateY(20px) rotate(-10deg); }
     100% { transform: translateY(0) rotate(0deg); }
 }
+
+
 
 
