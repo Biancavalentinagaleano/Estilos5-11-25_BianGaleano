@@ -1,4 +1,6 @@
-/* ----- Estilos generales ----- */
+/* ========================================== */
+/* Estilos generales                           */
+/* ========================================== */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -11,9 +13,11 @@ header, section, footer {
     margin-bottom: 40px;
 }
 
-/* ----- Actividad 1: Botón ----- */
+/* ========================================== */
+/* Actividad 1: Botón con efecto al clic      */
+/* ========================================== */
 .boton-animado {
-    background-color: #0078d7;
+    background-color: #0078d7; /* azul inicial */
     color: white;
     border: none;
     padding: 15px 30px;
@@ -21,15 +25,17 @@ header, section, footer {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease;
-    outline: none;
+    outline: none; /* quita borde al presionar */
 }
 
 .boton-animado:active {
-    background-color: #ff6600;
-    transform: scale(1.2);
+    background-color: #ff6600; /* cambia color al presionar */
+    transform: scale(1.2); /* aumenta tamaño al presionar */
 }
 
-/* ----- Actividad 2: Cuadro animado ----- */
+/* ========================================== */
+/* Actividad 2 y 4: Cuadro animado            */
+/* ========================================== */
 .cuadro {
     width: 100px;
     height: 100px;
@@ -37,37 +43,41 @@ header, section, footer {
     margin: 50px auto;
     position: relative;
     border-radius: 10px;
-    animation: moverDerecha 4s infinite;
-    transition: transform 0.3s ease; /* Actividad 4: hover */
+    animation: moverDerecha 4s infinite; /* actividad 2 */
+    transition: transform 0.3s ease;      /* actividad 4: hover */
 }
 
-/* Actividad 4: Cuadro aumenta al pasar cursor */
+/* Actividad 4: aumenta tamaño al pasar cursor */
 .cuadro:hover {
     transform: scale(1.3);
 }
 
-/* Animación de mover y cambiar color (Actividad 2) */
+/* Animación mover y cambiar color (Actividad 2) */
 @keyframes moverDerecha {
-    0% { left: 0; background-color: red; }
-    25% { left: 100px; background-color: orange; }
-    50% { left: 200px; background-color: yellow; }
-    75% { left: 100px; background-color: green; }
+    0%   { left: 0; background-color: red; }
+    25%  { left: 100px; background-color: orange; }
+    50%  { left: 200px; background-color: yellow; }
+    75%  { left: 100px; background-color: green; }
     100% { left: 0; background-color: blue; }
 }
 
-/* ----- Actividad 3 y 5: Texto animado ----- */
+/* ========================================== */
+/* Actividad 3 y 5: Texto animado             */
+/* ========================================== */
 .texto-animado {
     font-size: 24px;
     font-weight: bold;
     display: inline-block;
-    animation: girarTexto 3s infinite; /* Actividad 5: duración ajustable */
+    animation: girarTexto 3s infinite; /* Actividad 5: ajustar duración */
 }
 
-/* Animación de texto (Actividad 3) */
+/* Animación girar y desplazar el texto (Actividad 3) */
 @keyframes girarTexto {
     0%   { transform: translateY(0) rotate(0deg); }
     50%  { transform: translateY(-20px) rotate(180deg); }
     100% { transform: translateY(0) rotate(360deg); }
 }
+
+
 
 
