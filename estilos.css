@@ -7,7 +7,7 @@ body {
     padding: 50px;
 }
 
-/* ----- Botón (Actividad 1) ----- */
+/* ----- Actividad 1: Botón ----- */
 .boton-animado {
     background-color: #0078d7;
     color: white;
@@ -16,26 +16,26 @@ body {
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease; /* Suaviza los cambios */
 }
 
 .boton-animado:active {
-    background-color: #005fa3;
-    transform: scale(0.9);
+    background-color: #ff6600; /* Cambia color al presionar */
+    transform: scale(1.2); /* Aumenta tamaño al presionar */
 }
 
-/* ----- Cuadro (Actividad 2) ----- */
+/* ----- Actividad 2: Cuadro animado ----- */
 .cuadro {
     width: 100px;
     height: 100px;
     background-color: red;
     margin: 50px auto;
     position: relative;
-    animation: moverDerecha 4s infinite;
+    animation: moverDerecha 4s infinite; /* Animación continua */
     border-radius: 10px;
 }
 
-/* Animación con cambio de color */
+/* Animación que mueve y cambia de color */
 @keyframes moverDerecha {
     0% {
         left: 0;
@@ -58,6 +58,7 @@ body {
         background-color: blue;
     }
 }
+
 
 
 
