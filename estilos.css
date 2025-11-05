@@ -1,3 +1,4 @@
+/* ----- Estilos generales ----- */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,7 +7,7 @@ body {
     padding: 50px;
 }
 
-/* Estilo del botón */
+/* ----- Botón (Actividad 1) ----- */
 .boton-animado {
     background-color: #0078d7;
     color: white;
@@ -18,11 +19,46 @@ body {
     transition: all 0.2s ease;
 }
 
-/* Efecto al presionar (active) */
 .boton-animado:active {
     background-color: #005fa3;
     transform: scale(0.9);
 }
+
+/* ----- Cuadro (Actividad 2) ----- */
+.cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 50px auto;
+    position: relative;
+    animation: moverDerecha 4s infinite;
+    border-radius: 10px;
+}
+
+/* Animación con cambio de color */
+@keyframes moverDerecha {
+    0% {
+        left: 0;
+        background-color: red;
+    }
+    25% {
+        left: 100px;
+        background-color: orange;
+    }
+    50% {
+        left: 200px;
+        background-color: yellow;
+    }
+    75% {
+        left: 100px;
+        background-color: green;
+    }
+    100% {
+        left: 0;
+        background-color: blue;
+    }
+}
+
 
 
 
