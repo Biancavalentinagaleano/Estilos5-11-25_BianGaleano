@@ -1,4 +1,3 @@
-/* ======== ESTILOS GENERALES ======== */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -7,21 +6,16 @@ body {
     padding: 0;
 }
 
+header h1 {
+    animation: aparecer 2s ease-in-out;
+}
+
 header {
     background-color: #0078d7;
     color: white;
     text-align: center;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-header h1 {
-    animation: aparecer 2s ease-in-out;
-}
-
-@keyframes aparecer {
-    0% { opacity: 0; transform: translateY(-30px); }
-    100% { opacity: 1; transform: translateY(0); }
 }
 
 nav a {
@@ -36,6 +30,7 @@ nav a:hover {
     color: #ffdf00;
     transform: scale(1.1); 
 }
+
 
 main {
     padding: 20px;
@@ -55,6 +50,7 @@ section:hover, article:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
+
 footer {
     background-color: #222;
     color: white;
@@ -62,60 +58,18 @@ footer {
     padding: 10px 0;
 }
 
-/* ======== ACTIVIDAD 1 ======== */
-#boton-ejemplo {
-    background-color: #4caf50;
-    color: white;
-    padding: 15px 25px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    font-size: 16px;
-}
 
-#boton-ejemplo:active {
-    background-color: #2e7d32;
-    transform: scale(1.2);
-}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} este es el codigo para el css
 
-/* ======== ACTIVIDAD 2 ======== */
-#cuadro {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin: 30px auto;
-    animation: moverDerecha 4s infinite alternate;
-}
-
-@keyframes moverDerecha {
-    0%   { transform: translateX(0); background-color: red; }
-    25%  { transform: translateX(50px); background-color: orange; }
-    50%  { transform: translateX(100px); background-color: yellow; }
-    75%  { transform: translateX(150px); background-color: green; }
-    100% { transform: translateX(200px); background-color: blue; }
-}
-
-/* ======== ACTIVIDAD 4 ======== */
-#cuadro:hover {
-    transform: scale(1.3);
-    transition: transform 0.5s;
-}
-
-/* ======== ACTIVIDAD 3 Y 5 ======== */
-#texto-animado {
-    display: inline-block;
-    font-size: 20px;
-    animation: moverTexto 3s infinite ease-in-out;
-}
-
-@keyframes moverTexto {
-    0%   { transform: translateY(0) rotate(0deg); }
-    25%  { transform: translateY(-20px) rotate(10deg); }
-    50%  { transform: translateY(0) rotate(0deg); }
-    75%  { transform: translateY(20px) rotate(-10deg); }
-    100% { transform: translateY(0) rotate(0deg); }
-}
 
 
 
